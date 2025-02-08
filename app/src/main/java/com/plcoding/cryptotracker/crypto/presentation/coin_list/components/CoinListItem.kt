@@ -21,7 +21,6 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.res.vectorResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.PreviewLightDark
-import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.plcoding.cryptotracker.crypto.domain.Coin
@@ -96,7 +95,7 @@ fun CoinListItemPreview() {
             coinUI = previewCoin,
             onClick = { },
             modifier = Modifier.background(
-                MaterialTheme.colorScheme.primaryContainer
+                MaterialTheme.colorScheme.background
             )
         )
     }

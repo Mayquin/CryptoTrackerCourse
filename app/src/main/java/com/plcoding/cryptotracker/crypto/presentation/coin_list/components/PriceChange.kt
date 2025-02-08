@@ -12,6 +12,7 @@ import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
@@ -36,13 +37,14 @@ fun PriceChange(
     val contentColor =
         if (changeIsNegative) MaterialTheme.colorScheme.onErrorContainer else Color.Green
     val backgroundColor =
-        if (changeIsNegative) MaterialTheme.colorScheme.onErrorContainer else greenBackground
+        if (changeIsNegative) MaterialTheme.colorScheme.errorContainer else greenBackground
 
     Row(
         modifier = modifier
             .clip(RoundedCornerShape(100f))
             .background(backgroundColor)
-            .padding(4.dp)
+            .padding(4.dp),
+        verticalAlignment = Alignment.CenterVertically
     ) {
         Icon(
             imageVector = if (changeIsNegative) Icons.Default.KeyboardArrowDown else Icons.Default.KeyboardArrowUp,
@@ -62,8 +64,8 @@ private fun PriceChangePreview() {
     CryptoTrackerTheme {
         PriceChange(
             change = DisplayableNumber(
-                value = 2.43,
-                formatted = "2.43"
+                value = -2.43,
+                formatted = "-2.43"
             )
         )
     }

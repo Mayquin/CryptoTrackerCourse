@@ -42,8 +42,8 @@ fun Coin.toCoinUI(): CoinUI {
 
 fun Double.toDisplayableNumber(): DisplayableNumber {
     val formatter = NumberFormat.getNumberInstance(Locale.getDefault()).apply {
-        minimumIntegerDigits = 2
-        maximumIntegerDigits = 2
+        minimumFractionDigits = 2
+        maximumFractionDigits= 2
     }
     return DisplayableNumber(
         value = this,
