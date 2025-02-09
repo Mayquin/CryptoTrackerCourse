@@ -16,6 +16,7 @@ import io.ktor.client.request.get
  * Created by Maycon Henrique on 09/02/2025.
  * maycon255@hotmail.com
  */
+
 class RemoteCoinDataSource(
     private val httpClient: HttpClient
 ) : CoinDataSource {
