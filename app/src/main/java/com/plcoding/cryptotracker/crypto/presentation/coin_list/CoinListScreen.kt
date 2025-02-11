@@ -18,7 +18,6 @@ import androidx.compose.ui.unit.dp
 import com.plcoding.cryptotracker.crypto.presentation.coin_list.components.CoinListItem
 import com.plcoding.cryptotracker.crypto.presentation.coin_list.components.previewCoin
 import com.plcoding.cryptotracker.ui.theme.CryptoTrackerTheme
-
 /**
  * Created by Maycon Henrique on 08/02/2025.
  * maycon255@hotmail.com
@@ -27,6 +26,7 @@ import com.plcoding.cryptotracker.ui.theme.CryptoTrackerTheme
 @Composable
 fun CoinListScreen(
     state: CoinListState,
+    onAction: (CoinListAction) -> Unit,
     modifier: Modifier = Modifier
 ) {
     if (state.isLoading) {
@@ -46,7 +46,9 @@ fun CoinListScreen(
         items(state.coins) { coinUI ->
             CoinListItem(
                 coinUI = coinUI,
-                onClick = { },
+                onClick = {
+                    onAction(CoinListAction.OnCoinClick(coinUI))
+                },
                 modifier = Modifier.fillMaxWidth()
             )
             HorizontalDivider()
@@ -63,6 +65,7 @@ fun CoinListScreenPreview() {
                 previewCoin.copy(id = it.toString())
             }
         ),
+            onAction = { },
             modifier = Modifier.background(MaterialTheme.colorScheme.background)
         )
     }
