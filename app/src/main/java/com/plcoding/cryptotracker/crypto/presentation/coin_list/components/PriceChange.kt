@@ -19,7 +19,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.plcoding.cryptotracker.crypto.presentation.models.DisplayableNumber
+import com.plcoding.cryptotracker.crypto.presentation.coin_list.models.DisplayableNumber
 import com.plcoding.cryptotracker.ui.theme.CryptoTrackerTheme
 import com.plcoding.cryptotracker.ui.theme.greenBackground
 

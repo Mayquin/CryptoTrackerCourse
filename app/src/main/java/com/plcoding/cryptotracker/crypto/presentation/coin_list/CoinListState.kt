@@ -1,7 +1,7 @@
 package com.plcoding.cryptotracker.crypto.presentation.coin_list
 
 import androidx.compose.runtime.Immutable
-import com.plcoding.cryptotracker.crypto.presentation.models.CoinUI
+import com.plcoding.cryptotracker.crypto.presentation.coin_list.models.CoinUI
 
 /**
  * Created by Maycon Henrique on 08/02/2025.
