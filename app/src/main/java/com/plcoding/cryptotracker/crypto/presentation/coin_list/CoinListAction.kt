@@ -8,5 +8,5 @@ import com.plcoding.cryptotracker.crypto.presentation.coin_list.models.CoinUI
  */
 
 sealed interface CoinListAction {
-    data class OnCoinClick(val coinUI: CoinUI): CoinListAction
+    data class OnCoinClick(val coinUI: CoinUI) : CoinListAction
 }

@@ -10,7 +10,7 @@ import org.koin.core.context.startKoin
  * Created by Maycon Henrique on 09/02/2025.
  * maycon255@hotmail.com
  */
-class CryptoTrackerApp: Application() {
+class CryptoTrackerApp : Application() {
     override fun onCreate() {
         super.onCreate()
         startKoin {

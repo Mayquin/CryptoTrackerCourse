@@ -52,9 +52,11 @@ fun PriceChange(
             modifier = Modifier.size(20.dp),
             tint = contentColor
         )
-        Text("${change.formatted} %",
+        Text(
+            "${change.formatted} %",
             color = contentColor,
-            fontSize = 14.sp)
+            fontSize = 14.sp
+        )
     }
 }
 

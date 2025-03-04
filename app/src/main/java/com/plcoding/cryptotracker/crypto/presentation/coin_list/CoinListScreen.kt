@@ -18,6 +18,7 @@ import androidx.compose.ui.unit.dp
 import com.plcoding.cryptotracker.crypto.presentation.coin_list.components.CoinListItem
 import com.plcoding.cryptotracker.crypto.presentation.coin_list.components.previewCoin
 import com.plcoding.cryptotracker.ui.theme.CryptoTrackerTheme
+
 /**
  * Created by Maycon Henrique on 08/02/2025.
  * maycon255@hotmail.com

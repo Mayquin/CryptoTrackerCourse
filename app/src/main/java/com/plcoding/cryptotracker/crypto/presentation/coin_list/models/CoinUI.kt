@@ -36,7 +36,7 @@ fun Coin.toCoinUI(): CoinUI {
         symbol = symbol,
         rank = rank,
         priceUsd = priceUsd.toDisplayableNumber(),
-        marketCapUsd =  marketCapUsd.toDisplayableNumber(),
+        marketCapUsd = marketCapUsd.toDisplayableNumber(),
         changePercent24Hr = changePercent24Hr?.toDisplayableNumber() ?: 0.0.toDisplayableNumber(),
         iconRes = getDrawableIdForCoin(symbol)
     )
@@ -45,7 +45,7 @@ fun Coin.toCoinUI(): CoinUI {
 fun Double.toDisplayableNumber(): DisplayableNumber {
     val formatter = NumberFormat.getNumberInstance(Locale.getDefault()).apply {
         minimumFractionDigits = 2
-        maximumFractionDigits= 2
+        maximumFractionDigits = 2
     }
     return DisplayableNumber(
         value = this,
